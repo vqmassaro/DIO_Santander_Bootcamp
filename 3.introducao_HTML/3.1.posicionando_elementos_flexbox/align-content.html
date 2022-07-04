@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamento - align content</title>
+    <style>
+        .container{
+            height: 350px;
+            max-width: 300px ;
+            border: 1px solid black;
+            display: flex;
+            flex-wrap:wrap;
+        }
+
+        .item{
+            background-color: orangered;
+            padding: 0 5px;
+            margin: 5px;
+            text-align: center;
+            color: white;
+            flex: 1;
+            <!--border: 2px solid black;-->
+        }
+
+        .strech{
+            align-content: stretch;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .flex-start{
+            align-content: flex-start;
+        }
+
+        .flex-end{
+            align-content: flex-end;
+        }
+
+        .space-around{
+            align-content: space-around;
+        }
+
+        .space-between{
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+
+    <p>strech</p>
+    <div class="container strech">
+        <div class="item">Sed ut perspiciatis unde omnis iste natus error sit voluptatem </div>
+        <div class="item">Ut enim ad minima veniam, </div>
+        <div class="item">in voluptate velit esse cillum dolore,</div>
+        <div class="item">"Lorem ipsum dolor sit amet, consectetur.</div>
+        <div class="item"> magni dolores eos qui ratione voluptatemnt ut l</div>
+        <div class="item">vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</div>
+        <div class="item"> amet, consectetur, </div>
+    </div>
+
+    <p>center</p>
+    <div class="container center">
+        <div class="item">Sed ut perspiciatis unde voluptatem </div>
+        <div class="item">Ut enim ad minima veniam, </div>
+        <div class="item">in voluptate velit esse cillum</div>
+        <div class="item">"Lorem ipsum dolor sit amet.</div>
+        <div class="item"> magni dolores eos qui ratione</div>
+        <div class="item">vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</div>
+        <div class="item"> amet, consectetur,</div>  
+    </div>
+
+    <p>flex-start</p>
+    <div class="container flex-start">
+        <div class="item">Sed ut perspiciatis unde voluptatem </div>
+        <div class="item">Ut enim ad minima veniam, </div>
+        <div class="item">in voluptate velit esse cillum</div>
+        <div class="item">"Lorem ipsum dolor sit amet.</div>
+        <div class="item"> magni dolores eos qui ratione</div>
+        <div class="item">vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</div>
+        <div class="item"> amet, consectetur,</div>  
+    </div>
+
+    <p>space-around</p>
+    <div class="container space-around">
+        <div class="item">Sed ut perspiciatis unde voluptatem </div>
+        <div class="item">Ut enim ad minima veniam, </div>
+        <div class="item">in voluptate velit esse cillum</div>
+        <div class="item">"Lorem ipsum dolor sit amet.</div>
+        <div class="item"> magni dolores eos qui ratione</div>
+        <div class="item">vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</div>
+        <div class="item"> amet, consectetur,</div>  
+    </div>
+
+    <p>space-between</p>
+    <div class="container space-between">
+        <div class="item">Sed ut perspiciatis unde voluptatem </div>
+        <div class="item">Ut enim ad minima veniam, </div>
+        <div class="item">in voluptate velit esse cillum</div>
+        <div class="item">"Lorem ipsum dolor sit amet.</div>
+        <div class="item"> magni dolores eos qui ratione</div>
+        <div class="item">vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</div>
+        <div class="item"> amet, consectetur,</div>  
+    </div>
+</body>
+</html>
